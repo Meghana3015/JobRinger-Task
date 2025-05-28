@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jobRinger - India's Job Portal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jobs.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="logo-container">
+                <a href="/" class="logo">
+                    <img src="https://www.jobringer.com/images/logo.png" alt="jobRinger Logo">
+                </a>
+                <span class="tagline">India's Job Portal</span>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#jobs">Jobs</a></li>
+                    <li><a href="#employers">Active Employers</a></li>
+                    <li><a href="#blogs">Job Blogs</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                </ul>
+            </nav>
+            
+            <div class="auth-buttons">
+                <a href="#" class="btn btn-light">Jobseeker Login</a>
+                <a href="#" class="btn btn-primary">Employer Login</a>
+            </div>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Employers Banner -->
+    <section id="employers-banner">
+        <div class="container">
+            <div class="banner-content">
+                <h2>EMPLOYERS</h2>
+                <p>FREE JOB Postings and Much More...</p>
+            </div>
+            <div class="banner-buttons">
+                <a href="#" class="btn btn-yellow">Register for FREE</a>
+                <a href="#" class="btn btn-light">Post A Job</a>
+                <a href="#" class="btn btn-blue">Sales Enquiry</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>BRINGING YOU THE PERFECT JOB!</h1>
+                <p>11,000+ JOBS to Apply</p>
+            </div>
+            
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" placeholder="Search Jobs Now">
+                    <button class="btn btn-yellow">Search</button>
+                </div>
+                <div class="search-actions">
+                    <a href="#" class="btn btn-light">View Jobs</a>
+                    <a href="#" class="btn btn-yellow">Register For FREE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Search -->
+    <section id="quick-search">
+        <div class="container">
+            <h2>Quick Job Search <i class="fas fa-search"></i></h2>
+            <div class="quick-search-tags">
+                <a href="#" class="tag">#Fresher</a>
+                <a href="#" class="tag">#Work From Home</a>
+                <a href="#" class="tag">#WFH</a>
+                <a href="#" class="tag">#IT</a>
+                <a href="#" class="tag">#HR</a>
+                <a href="#" class="tag">#Back Office</a>
+                <a href="#" class="tag">#BPO Jobs</a>
+                <a href="#" class="tag">#ITES</a>
+                <a href="#" class="tag">#Finance</a>
+                <a href="#" class="tag">#Medical</a>
+                <a href="#" class="tag">#Pharma</a>
+                <a href="#" class="tag">#Manager</a>
+                <a href="#" class="tag">#Developer</a>
+                <a href="#" class="tag">#Marketing</a>
+                <a href="#" class="tag">#Engineering</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Jobs -->
+    <section id="featured-jobs">
+        <div class="container">
+            <h2>Featured Jobs</h2>
+            <div class="jobs-container" id="jobs-list"></div>
+        </div>
+    </section>
+
+    <!-- Featured Employers Carousel -->
+    <section id="featured-employers">
+        <div class="container">
+            <h2>FEATURED <span>EMPLOYERS</span></h2>
+            <div class="employers-carousel">
+                <!-- <button class="carousel-btn prev" aria-label="Previous">&lt;</button> -->
+                <div class="carousel-track">
+                    <img class="carousel-logo" src="https://www.jobringer.com/images/content/company-logo/hjp3a708430e75815b71420f8ce48dd94e5.png" alt="Employer 1">
+                    <img class="carousel-logo" src="https://www.jobringer.com/images/content/company-logo/hjp05cdc12c0c5c095c7a336cc15f8ea0f0.png" alt="Employer 2">
+                    <img class="carousel-logo" src="https://www.jobringer.com/images/content/company-logo/hjp06b1d1f5754aa608d474ed7377096af2.png" alt="Employer 3">
+                    <img class="carousel-logo" src="https://www.jobringer.com/images/content/company-logo/hjp6ca16d3d1f69ee5ceb56ce7922d0a95b.png" alt="Employer 4">
+                    <img class="carousel-logo" src="https://www.jobringer.com/images/content/company-logo/hjp8f57b120271a93cf9b4a5641959cfdc2.png" alt="Employer 5">
+                    <img class="carousel-logo" src="https://www.jobringer.com/images/content/company-logo/hjp11bcfcf193d8967c0293020e25b129a4.png" alt="Employer 6">
+                    <img class="carousel-logo" src="https://www.jobringer.com/images/content/company-logo/hjp11e6e3219c4d1b74c89976040b163d4c.png" alt="Employer 7">
+                    <img class="carousel-logo" src="https://www.jobringer.com/images/content/company-logo/hjp58ed6bf767e09b2b07fb9632316851fb.png" alt="Employer 8">
+                    <img class="carousel-logo" src="https://www.jobringer.com/images/content/company-logo/hjp9734d85f1102d4cbde6fc92c30396a20.png" alt="Employer 9">
+                </div>
+                <!-- <button class="carousel-btn next" aria-label="Next">&gt;</button> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile App -->
+    <section id="mobile-app">
+        <div class="container">
+            <div class="app-content">
+                <h2>Apply to Jobs on the Go</h2>
+                <h3>Get instant job alerts and apply with a single tap</h3>
+                <div class="download-row">
+                    <span class="download-label">
+                        <a href="https://play.google.com/store/apps/details?id=com.jobringer.app" target="_blank" style="color:var(--primary-color);font-weight:600;text-decoration:none;">
+                            Download
+                        </a> Mobile App:
+                    </span>
+                    <div class="app-stores">
+                        <a href="https://play.google.com/store/apps/details?id=com.jobringer.app" class="app-store" target="_blank">
+                            <img src="https://www.jobringer.com/images/anroid.png" alt="Get it on Google Play">
+                        </a>
+                        <br>
+                        <a href="#" class="app-store">
+                            <img src="https://www.jobringer.com/images/ios.png" alt="Download on the App Store">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="app-image">
+                <img src="https://images.pexels.com/photos/4195342/pexels-photo-4195342.jpeg" alt="Mobile App Preview">
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Locations -->
+    <section id="job-locations">
+        <div class="container">
+            <div class="location-box india">
+                <h2>JOBS IN INDIA</h2>
+                <div class="location-tags">
+                    <span class="tag">#Mumbai</span>
+                    <span class="tag">#Delhi</span>
+                    <span class="tag">#Ajmer</span>
+                    <span class="tag">#Pune</span>
+                    <span class="tag">#Hyderabad</span>
+                    <span class="tag">#Agra</span>
+                    <span class="tag">#Chennai</span>
+                    <span class="tag">#Kolkata</span>
+                    <span class="tag">#Indore</span>
+                    <span class="tag">#Gurugram</span>
+                    <span class="tag">#Jaipur</span>
+                    <span class="tag">#Ahmedabad</span>
+                </div>
+            </div>
+            <div class="location-box international">
+                <h2>INTERNATIONAL JOBS</h2>
+                <div class="location-tags">
+                    <a href="#" class="tag">#Africa</a>
+                    <a href="#" class="tag">#USA</a>
+                    <a href="#" class="tag">#UK</a>
+                    <a href="#" class="tag">#Australia</a>
+                    <a href="#" class="tag">#Canada</a>
+                    <a href="#" class="tag">#Singapore</a>
+                    <a href="#" class="tag">#Dubai</a>
+                    <a href="#" class="tag">#Saudi Arabia</a>
+                    <a href="#" class="tag">#New Zealand</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section id="stats">
+        <div class="container">
+            <div class="stat-box">
+                <h3>Jobs Posted</h3>
+                <div class="stat-number" data-count="40808">0</div>
+            </div>
+            <div class="stat-box">
+                <h3>Jobs Filled</h3>
+                <div class="stat-number" data-count="15153">0</div>
+            </div>
+            <div class="stat-box">
+                <h3>Employers</h3>
+                <div class="stat-number" data-count="25776">0</div>
+            </div>
+            <div class="stat-box">
+                <h3>Active Users</h3>
+                <div class="stat-number" data-count="1554182">0</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disclaimer Section -->
+    <div class="disclaimer-main">
+        <div class="container">
+            <div class="disclaimer">
+                <h3>Disclaimer</h3>
+                <p>All Trademarks and Logos are the property of their respective owners, depicted here purely for representation purpose. JobRinger.com has taken all reasonable steps to ensure that information on this site is genuine. Job Applicants are advised to evaluate independently. JobRinger.com shall not have any responsibility in this regard.</p>
+            </div>
+            <div class="recognized-by">
+                <p>Recognized By</p>
+                <img src="https://www.jobringer.com/images/startuplogo.png" alt="Recognition Badge">
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-social">
+                <p>Follow us on</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <a href="#">Terms and conditions</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">FAQ</a>
+                <a href="#">Blogs</a>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 JobRinger Ventures Private Limited. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="whatsapp-icon">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+    <script src="js/jobs.js"></script>
+</body>
+</html>

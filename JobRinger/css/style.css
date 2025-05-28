@@ -1,0 +1,650 @@
+:root {
+    --primary-color: #1a237e;
+    --secondary-color: #3949ab;
+    --accent-color: #ffb300;
+    --success-color: #388e3c;
+    --warning-color: #fbc02d;
+    --danger-color: #d32f2f;
+    --dark-color: #212121;
+    --light-color: #f5f7fa;
+    --gray-color: #757575;
+    --white-color: #ffffff;
+    --box-shadow: 0 4px 12px rgba(26, 35, 126, 0.08);
+    --transition: all 0.3s cubic-bezier(.4,0,.2,1);
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color);
+    background-color: var(--light-color);
+}
+
+.container {
+    width: 92%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+#header {
+    background-color: var(--white-color);
+    box-shadow: var(--box-shadow);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo .job {
+    color: var(--primary-color);
+}
+
+.logo .ringer {
+    color: var(--secondary-color);
+}
+
+.logo-arrow {
+    color: var(--accent-color);
+    font-size: 14px;
+    margin-left: 4px;
+}
+
+.tagline {
+    font-size: 12px;
+    color: var(--gray-color);
+    margin-left: 10px;
+}
+
+#header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.main-nav a {
+    color: var(--dark-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+.main-nav a:hover {
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+}
+
+.btn-light {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.btn-light:hover {
+    background-color: var(--light-color);
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-yellow {
+    background-color: var(--accent-color);
+    color: var(--dark-color);
+}
+
+.btn-yellow:hover {
+    background-color: #ffa000;
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--dark-color);
+}
+
+/* Employers Banner */
+#employers-banner {
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: var(--white-color);
+    padding: 15px 0;
+    margin-top: 70px;
+}
+
+.banner-content h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.banner-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+#employers-banner .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    text-align: left;
+}
+
+#employers-banner .banner-content {
+    flex: 1 1 0;
+}
+
+#employers-banner .banner-buttons {
+    flex: 0 0 auto;
+    display: flex;
+    gap: 18px;
+}
+
+#hero {
+    background-color: var(--white-color);
+    padding: 60px 0 40px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    color: var(--primary-color);
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.search-container {
+    max-width: 800px;
+    margin: 30px auto 0;
+}
+
+.search-box {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 12px 20px;
+    border: 1px solid #c5cae9;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+}
+
+.search-box button {
+    border-radius: 0 4px 4px 0;
+    padding: 12px 30px;
+}
+
+.search-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#quick-search {
+    background-color: var(--secondary-color);
+    padding: 40px;
+    color: var(--white-color);
+}
+
+#quick-search .container h2 {
+    padding-bottom: 18px;
+}
+
+.quick-search-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.tag {
+    background-color: rgba(26, 35, 126, 0.12);
+    padding: 6px 15px;
+    border-radius: 4px;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+    border: 1px solid var(--primary-color);
+    background-clip: padding-box;
+}
+
+.tag:hover {
+    background-color: var(--accent-color);
+    color: var(--dark-color);
+    border-color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+#quick-search .tag {
+    color: var(--white-color);
+    border-color: var(--white-color);
+    background-color: rgba(255, 179, 0, 0.08);
+}
+
+#quick-search .tag:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-color: var(--primary-color);
+}
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25D366;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 30px;
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    z-index: 999;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1);
+}
+
+#footer {
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: var(--white-color);
+    padding: 24px 0 24px 0;
+    font-size: 16px;
+    border-top: none;
+}
+
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.disclaimer-main .container {
+    background-color: white;
+}
+
+.disclaimer-main .container,
+.footer-top {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.recognized-by {
+    flex: 0 0 20%;
+    max-width: 20%;
+    min-width: 160px;
+    text-align: center;
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.recognized-by p {
+    font-size: 16px;
+    color: var(--accent-color);
+    margin-top: 14px;
+    font-weight: 800;
+}
+
+.recognized-by img {
+    min-width: 180px;
+    min-height: 90px;
+    object-fit: fill;
+    background: var(--white-color);
+    margin-bottom: 10px;
+    border-radius: 18px;
+}
+
+.disclaimer {
+    flex: 1 1 80%;
+    max-width: 80%;
+    min-width: 220px;
+    padding: 20px;
+    color: var(--white-color);
+}
+
+.disclaimer h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--accent-color);
+}
+
+.disclaimer p {
+    color: #e0e0e0;
+    line-height: 1.7;
+}
+
+.footer-social, .footer-links, .footer-social p {
+    color: var(--white-color);
+    margin-bottom: 10px;
+    background: transparent;
+}
+
+.footer-links a {
+    color: var(--white-color);
+}
+
+.footer-links a:hover {
+    background: var(--accent-color);
+    color: var(--primary-color);
+}
+
+.social-icons a {
+    color: var(--white-color);
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.18);
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    background: var(--accent-color);
+    color: var(--primary-color);
+}
+
+.footer-copyright {
+    color: #e0e0e0;
+}
+
+.employers-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 18px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.employer-card {
+    min-width: 160px;
+    max-width: 180px;
+    flex: 0 0 auto;
+    background: var(--white-color);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(26, 35, 126, 0.06);
+    padding: 18px 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.employers-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    position: relative;
+    margin: 0 auto 20px auto;
+    max-width: 100%;
+}
+
+.carousel-btn {
+    display: none;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+    max-width: 1200px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.carousel-track::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-logo {
+    width: 160px;
+    height: 100px;
+    object-fit: contain;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(26, 35, 126, 0.06);
+    padding: 10px;
+    transition: transform 0.2s;
+    flex-shrink: 0;
+}
+
+.carousel-logo:hover {
+    transform: scale(1.08);
+    box-shadow: 0 4px 16px rgba(26, 35, 126, 0.13);
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1200px) {
+    .carousel-track {
+        max-width: 98vw;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-nav {
+        display: none;
+    }
+    .mobile-menu-btn {
+        display: block;
+    }
+    .auth-buttons {
+        display: none;
+    }
+    #employers-banner .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .banner-content {
+        margin-bottom: 15px;
+    }
+    #job-locations .container {
+        grid-template-columns: 1fr;
+    }
+    #stats .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .disclaimer-main .container,
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        text-align: center;
+    }
+    .recognized-by,
+    .disclaimer {
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+    #mobile-app .container {
+        gap: 30px;
+    }
+    .app-image {
+        flex: 0 0 160px;
+    }
+    .app-image img {
+        max-width: 140px;
+    }
+}
+
+@media (max-width: 768px) {
+    .search-box {
+        flex-direction: column;
+    }
+    .search-box input {
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+    .search-box button {
+        border-radius: 4px;
+    }
+    .search-actions {
+        flex-direction: column;
+    }
+    .banner-buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .jobs-container {
+        grid-template-columns: 1fr;
+    }
+    .employers-container {
+        gap: 10px;
+    }
+    .footer-top {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .recognized-by {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 700px) {
+    .carousel-logo {
+        width: 80px;
+        height: 40px;
+        padding: 6px;
+    }
+    .carousel-track {
+        gap: 12px;
+        max-width: 98vw;
+    }
+    #mobile-app .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    .app-content {
+        min-width: 0;
+    }
+    .app-image {
+        justify-content: center;
+        margin-top: 0;
+    }
+    .employer-card {
+        min-width: 120px;
+        max-width: 140px;
+        padding: 12px 4px;
+    }
+}
+
+@media (max-width: 600px) {
+    #mobile-app .container {
+        padding: 0 10px;
+    }
+    .app-stores {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .download-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .app-image img {
+        max-width: 140px;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .tagline {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+    .quick-search-tags {
+        gap: 10px;
+    }
+    .tag {
+        padding: 4px 10px;
+        font-size: 14px;
+    }
+    .whatsapp-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        bottom: 20px;
+        right: 20px;
+    }
+    .footer-top {
+        gap: 15px;
+    }
+}
