@@ -92,3 +92,59 @@ window.addEventListener('scroll', () => {
     
     lastScroll = currentScroll;
 });
+
+// Jobs Carousel
+document.addEventListener('DOMContentLoaded', function () {
+    const jobs = [
+        { title: "Software Engineer", company: "ABC Tech", location: "Mumbai", type: "Full Time" },
+        { title: "HR Manager", company: "XYZ Corp", location: "Delhi", type: "Full Time" },
+        { title: "Backend Developer", company: "Dev Solutions", location: "Remote", type: "WFH" },
+        { title: "Marketing Lead", company: "Marketify", location: "Pune", type: "Full Time" },
+        { title: "Finance Analyst", company: "FinServe", location: "Bangalore", type: "Full Time" },
+        { title: "Medical Rep", company: "HealthPlus", location: "Chennai", type: "Full Time" },
+        { title: "Frontend Developer", company: "WebWorks", location: "Hyderabad", type: "Full Time" },
+        { title: "QA Tester", company: "Testify", location: "Kolkata", type: "WFH" },
+        { title: "UI/UX Designer", company: "DesignPro", location: "Gurugram", type: "Full Time" },
+        { title: "Sales Executive", company: "SalesForce", location: "Ahmedabad", type: "Full Time" }
+    ];
+
+    const track = document.querySelector('.jobs-carousel-track');
+    const prevBtn = document.querySelector('.carousel-btn.prev');
+    const nextBtn = document.querySelector('.carousel-btn.next');
+    const cardWidth = 320; // 300px card + 20px margin
+
+    // Inject job cards if not already present
+    if (track && track.children.length === 0) {
+        jobs.forEach(job => {
+            const card = document.createElement('div');
+            card.className = 'job-card';
+            card.innerHTML = `
+                <h4>${job.title}</h4>
+                <p><strong>${job.company}</strong></p>
+                <p>${job.location} | ${job.type}</p>
+                <a href="#" class="btn btn-yellow">Apply Now</a>
+            `;
+            track.appendChild(card);
+        });
+    }
+
+    function updateButtons() {
+        prevBtn.disabled = track.scrollLeft <= 0;
+        nextBtn.disabled = track.scrollLeft + track.offsetWidth >= track.scrollWidth - 1;
+    }
+
+    prevBtn.addEventListener('click', function () {
+        track.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+        setTimeout(updateButtons, 400);
+    });
+
+    nextBtn.addEventListener('click', function () {
+        track.scrollBy({ left: cardWidth, behavior: 'smooth' });
+        setTimeout(updateButtons, 400);
+    });
+
+    track.addEventListener('scroll', updateButtons);
+
+    // Initial state
+    updateButtons();
+});

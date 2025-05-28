@@ -31,6 +31,86 @@ const jobs = [
         experience: "0 - 5 Years",
         location: "Bhopal / India",
         label: "In Office Job"
+    },
+    {
+        title: "Cloud Architect",
+        company: "Cloudify",
+        type: "Full Time - Permanent",
+        experience: "5 - 12 Years",
+        location: "Pune / India",
+        label: "Remote Option"
+    },
+    {
+        title: "Business Analyst",
+        company: "BizAnalytics",
+        type: "Full Time - Permanent",
+        experience: "2 - 6 Years",
+        location: "Noida / India",
+        label: "Hybrid"
+    },
+    {
+        title: "Content Writer",
+        company: "WriteRight",
+        type: "Full Time - Permanent",
+        experience: "1 - 4 Years",
+        location: "Remote / India",
+        label: "WFH"
+    },
+    {
+        title: "Support Engineer",
+        company: "HelpDesk",
+        type: "Full Time - Permanent",
+        experience: "0 - 3 Years",
+        location: "Chandigarh / India",
+        label: "In Office Job"
+    },
+    {
+        title: "Network Admin",
+        company: "NetSecure",
+        type: "Full Time - Permanent",
+        experience: "3 - 8 Years",
+        location: "Bhopal / India",
+        label: "In Office Job"
+    },
+    {
+        title: "Product Manager",
+        company: "Prodify",
+        type: "Full Time - Permanent",
+        experience: "6 - 12 Years",
+        location: "Jaipur / India",
+        label: "Hybrid"
+    },
+    {
+        title: "Digital Marketer",
+        company: "AdGuru",
+        type: "Full Time - Permanent",
+        experience: "2 - 5 Years",
+        location: "Lucknow / India",
+        label: "Remote Option"
+    },
+    {
+        title: "Operations Lead",
+        company: "OpsPro",
+        type: "Full Time - Permanent",
+        experience: "5 - 10 Years",
+        location: "Indore / India",
+        label: "In Office Job"
+    },
+    {
+        title: "Recruiter",
+        company: "HireFast",
+        type: "Full Time - Permanent",
+        experience: "1 - 4 Years",
+        location: "Patna / India",
+        label: "WFH"
+    },
+    {
+        title: "Graphic Designer",
+        company: "PixelArt",
+        type: "Full Time - Permanent",
+        experience: "0 - 3 Years",
+        location: "Surat / India",
+        label: "Remote Option"
     }
 ];
 
