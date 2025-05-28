@@ -227,12 +227,12 @@
     font-size: 18px;
     color: var(--dark-color);
     font-weight: 500;
-    margin-right: 90px;
+    margin-right: 12px;
 }
 
 .app-stores {
     display: flex;
-    gap: 18px;
+    gap: 12px;
 }
 
 .app-store {
